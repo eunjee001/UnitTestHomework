@@ -28,7 +28,16 @@ object Homework {
      * Checks if the braces are set correctly
      * e.g. "(a * b))" should return false
      */
-    fun checkBraces(string: String): Boolean {
-        return string.count { it == '(' } == string.count { it == ')' }
+    var string2 : String ?= null
+    fun checkBraces(string: String): String {
+        string2 = string
+        println(">>>> $string2")
+
+        return string2 as String
+    }
+
+    fun bool() : String? {
+        println(">>>> $string2")
+        return string2
     }
 }
